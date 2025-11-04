@@ -9,8 +9,8 @@ function App() {
 
   return (
     <>
-      <h1>Code By Me</h1>
-      
+      <Hello />
+      <h3>Sum of 5 + 5 : {sum()}</h3>
       <h1>Counter Vol : {count}</h1>
       <User />
       <button onClick={() => setCount((count) => count + 1)}>
@@ -18,6 +18,14 @@ function App() {
       </button>
     </>
   );
+}
+
+function Hello() {
+  return <h1>Code By Me</h1>;
+}
+
+function sum() {
+  return 5 + 5;
 }
 
 export default App;
